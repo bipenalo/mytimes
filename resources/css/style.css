@@ -1,0 +1,136 @@
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+ h1 {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  color: MediumAquamarine;
+  display: inline;
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+    flex-grow: 1;
+  margin-left: 20px;
+  border: 1px solid black;
+
+}
+
+ul span {
+  color: black;
+  align-items: center;
+  padding: 2px;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  border: 1px solid black;
+  align-items: flex-start;
+ justify-content: space-around;
+
+}
+
+.mother {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  width: 630px;
+  height: 300px;
+
+}
+
+.orca.image {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  width: 630px;
+  height: 300px;
+}
+
+.orca.image p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.cameras {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  width: 630px;
+  height: 300px;
+}
+.cameras p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+.cat {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  width: 300px;
+  height: 300px;
+}
+.cat p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.mother p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.column.large {
+  display: inline-flex;
+  align-items: flex-start;
+  border: 1px solid black;
+  width: 630px;
+  flex-direction: column;
+  align-content: flex-start;
+
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+
+.column.medium {
+  display: inline-flex;
+  border: 1px solid black;
+  width: 300px;
+  flex-direction: column;
+
+}
+
+.column.small {
+  display: inline-flex;
+  border: 1px solid black;
+  width: 240px;
+  flex-direction: column;
+}
+
+.bites, .rect, .brooklyn, .monument, .orca, .burger {
+    border: 1px solid black;
+}
+
+.orca, .burger_camera {
+  display: inline-flex;
+  width: 630px;
+  flex-direction: column;
+}
+.column {
+  display: inline-flex;
+  width: 315px;
+  flex-direction: row;
+}
