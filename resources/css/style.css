@@ -1,6 +1,9 @@
 header {
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  border-bottom: 2px solid black;
+
 }
 
  h1 {
@@ -15,9 +18,13 @@ header {
 .title {
   display: flex;
   align-items: center;
-    flex-grow: 1;
+   background-color: white;
   margin-left: 20px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  padding-right: 1300px;
+  padding-top:  0px;
+
+
 
 }
 
@@ -30,23 +37,25 @@ ul span {
 
 .container {
   display: flex;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   align-items: flex-start;
- justify-content: space-around;
+ justify-content: center;
 
 }
 
 .mother {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  /*
   width: 630px;
-  height: 300px;
+  height: 150px; */
 
 }
 
 .orca.image {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  /*
   width: 630px;
-  height: 300px;
+  height: 300px; */
 }
 
 .orca.image p {
@@ -59,8 +68,9 @@ ul span {
 
 .cameras {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  /*
   width: 630px;
-  height: 300px;
+  height: 300px; */
 }
 .cameras p {
   font-family: Georgia;
@@ -81,6 +91,20 @@ ul span {
   color: white;
   text-align: center;
 }
+
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
 .mother p {
   font-family: Georgia;
   font-weight: bold;
@@ -88,13 +112,16 @@ ul span {
   color: white;
 }
 
+
+
 .column.large {
   display: inline-flex;
   align-items: flex-start;
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   width: 630px;
   flex-direction: column;
   align-content: flex-start;
+  margin-right: 30px;
 
 }
 
@@ -107,30 +134,83 @@ p {
 
 .column.medium {
   display: inline-flex;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 300px;
   flex-direction: column;
+  margin-right: 30px;
 
 }
 
 .column.small {
   display: inline-flex;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 240px;
   flex-direction: column;
 }
 
-.bites, .rect, .brooklyn, .monument, .orca, .burger {
-    border: 1px solid black;
+.bites_list p {
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  height: 50px;
+  text-align: justify;
+  border: 1px solid blue;
+
+
 }
 
+
+.bites h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ .rect, .brooklyn, .monument, .orca, .burger {
+    /*border: 1px solid black;*/
+}
+/*
 .orca, .burger_camera {
   display: inline-flex;
   width: 630px;
-  flex-direction: column;
+  flex-direction: row;
 }
 .column {
   display: inline-flex;
   width: 315px;
   flex-direction: row;
+}
+*/
+/* This is the father container it takes the twe child flex-items in column1_story
+and put them next to each other horizontally. */
+.column1_story {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+/* here I created a container that is a child of the column1_story container
+the flex-direction: column, will align the elements vertically. */
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.footer  {
+  background-color: MediumAquamarine;
+ margin: auto;
+ font-family: Verdana;
+ font-size: 12px;
+
+}
+
+.mytimes span {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
